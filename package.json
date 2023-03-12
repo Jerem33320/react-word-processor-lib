@@ -1,7 +1,7 @@
 {
-  "name": "@YOUR_GITHUB_USERNAME/YOUR_REPOSITORY_NAME",
+  "name": "@Jerem33320/react-word-processor-lib",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/YOUR_REPOSITORY_NAME"
+    "registry": "https://npm.pkg.github.com/Jerem33320"
   },
   "version": "0.0.1",
   "description": "A react component library for word processing",
@@ -19,7 +19,6 @@
     "@babel/preset-env": "^7.16.4",
     "@babel/preset-react": "^7.16.0",
     "@babel/preset-typescript": "^7.16.0",
-    "@mdx-js/react": "^2.1.2",
     "@rollup/plugin-commonjs": "^21.0.1",
     "@rollup/plugin-node-resolve": "^13.0.6",
     "@rollup/plugin-typescript": "^8.3.0",
@@ -56,6 +55,7 @@
   ],
   "types": "dist/index.d.ts",
   "dependencies": {
+    "jest-environment-jsdom": "^29.5.0",
     "rollup-plugin-postcss": "^4.0.2"
   }
 }

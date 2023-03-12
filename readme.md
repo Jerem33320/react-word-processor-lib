@@ -48,3 +48,38 @@ Architecture of the project:
 ├── tsconfig.json
 └── rollup.config.js
 ```
+
+If npmrc values are OK and github is configured, you can publish your lib on github:
+
+```
+npm publish
+```
+
+Finally we need to update the _version number_ in our `package.json` file. Remember we are publishing a package so when we make changes, we need to ensure we don't impact users of previous versions of our library. Every time we publish we should increment the version number:
+
+`package.json`
+
+```json
+{
+  "version": "0.0.2",
+  ...
+}
+```
+
+Create Storybook:
+
+```bash
+npx sb init
+```
+
+✔ Do you want to run the 'npm7' migration on your project? … no
+Skipping the npm7 migration.
+
+If you change your mind, run 'npx storybook@next automigrate'
+
+Now run these commands:
+
+```bash
+npm run rollup
+npm publish
+```
