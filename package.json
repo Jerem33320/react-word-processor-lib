@@ -3,7 +3,7 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/Jerem33320"
   },
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "A react component library for word processing",
   "scripts": {
     "rollup": "rollup -c",
