@@ -15,13 +15,13 @@ const Button = (props: Partial<ButtonProps>) => {
   const selectBtnStyle = () => {
     switch (props.label) {
         case 'abc':
-          return "scratched";
+          return "buttonEdit scratched";
         case 'B':
-            return "bold";
+            return "buttonEdit bold";
         case 'U':
-            return "underline";
+            return "buttonEdit underline";
         case 'I':
-            return "italic";
+            return "buttonEdit italic";
         default:
           "";
       }

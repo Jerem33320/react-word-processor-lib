@@ -7,17 +7,13 @@ import ColorPalette from './ColorPalette';
 export default {
   title: '1-atoms/ColorPalette',
   component: ColorPalette,
-  argTypes: {
-    textColor: { control: 'color' },
-  },
 } as ComponentMeta<typeof ColorPalette>;
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-const Template: ComponentStory<typeof ColorPalette> = (args) => <ColorPalette {...args} />;
+const Template: ComponentStory<typeof ColorPalette> = (args) => <ColorPalette />;
 
 export const Default = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Default.args = {
-  label: "A",
-  handleClick: action('ChangeColor')
+  handleChange: action('ChangeColor')
 };
